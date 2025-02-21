@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Cell | Entrepreneurship Cell</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="bg-canvas"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="logo">
+            <img src="assets/E-cell.png" alt="E-Cell Logo" style="width: 70px; height: 55px;">
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#events">Events</a>
+            <a href="#podcasts">Podcasts</a>
+            <a href="#speakers">Speakers</a>
+            <a href="#newsletter">Newsletter</a>
+            <a href="#sponsors">Sponsors</a>
+            <a href="#about">About</a>
+            <a href="team.html">Team</a>
+        </div>
+        <button class="cta1-button" style="margin-left: auto;">Explore More</button>
+        <div class="mobile-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animated-heading">The Entrepreneurship Cell</h1>
+            <p>Where Dream Become Ventures</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <div class="about-grid">
+            <div class="about-card">
+                <h3>What is E-Cell?</h3>
+                <p>The Entrepreneurship Cell (E-Cell),Sri Aurobindo College is a student-run organization dedicated to promoting the spirit of entrepreneurship among students. We believe in fostering innovation, creativity, and an entrepreneurial mindset through various activities and initiatives.</p>
+            </div>
+            <div class="about-card">
+                <h3>Mission & Vision</h3>
+                <p>Our mission is to equip students with entrepreneurial skills, foster innovation, and develop ethical leaders. Through resources, workshops, and mentorship, we support collaboration and creativity, empowering the next generation of entrepreneurs to drive innovation and growth.</p>
+            </div>
+            <div class="about-card achievements">
+                <h3>Achievements</h3>
+                <div class="achievement-stats">
+                    <div class="stat">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span class="counter" data-target="50+">50+</span>
+                        <span>Events</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-users"></i>
+                        <span class="counter" data-target="5000+">5000+</span>
+                        <span>Members</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-lightbulb"></i>
+                        <span class="counter" data-target="50+">50+</span>
+                        <span>Awards Won</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-handshake"></i>
+                        <span class="counter" data-target="100+">100+</span>
+                        <span>Sponsors</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="section">
+        <h2>Events</h2>
+        <div class="events-container"></div>
+    </section>
+
+    <!-- Podcasts Section -->
+    <section id="podcasts" class="section">
+        <h2>VisionEx Podcast Series</h2>
+        <div class="podcasts-slider"></div>
+    </section>
+
+    <!-- Guest Speakers Section -->
+    <section id="speakers" class="section">
+        <h2>Guest Speakers</h2>
+        <div class="guest-speakers-container">
+            <!-- Guest speaker cards will be appended here by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="section">
+        <h2>Stay Updated</h2>
+        <div class="newsletter-container">
+            <form id="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="subscribe-btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section id="sponsors" class="section">
+        <h2>Our Sponsors</h2>
+        <div class="sponsors-scroll">
+            <div class="scroll-row"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@ecell.in</p>
+                <p>Phone: +91 91190 35011</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <div class="quick-links">
+                    <a href="#events">Events</a>
+                    <a href="#podcasts">Podcasts</a>
+                    <a href="team.html">Team</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 E-Cell. All rights reserved.</p>
+            <p class="made-with-love">Made with <span class="heart">❤️</span> by E-Cell Team</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
