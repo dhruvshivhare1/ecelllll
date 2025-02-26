@@ -1398,6 +1398,7 @@ footer {
     border-radius: 20px;
     margin: 2rem auto;
     max-width: 1200px;
+    align-item: center;
 }
 
 #team-redirect .subtitle {
@@ -1406,6 +1407,7 @@ footer {
     margin-top: -2rem;
     margin-bottom: 3rem;
     opacity: 0.9;
+    align-item: center;
 }
 
 .team-redirect-container {
