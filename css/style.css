@@ -1398,7 +1398,6 @@ footer {
     border-radius: 20px;
     margin: 2rem auto;
     max-width: 1200px;
-    align-item: center;
 }
 
 #team-redirect h2 {
@@ -1415,9 +1414,7 @@ footer {
     font-size: 1.5rem;
     margin: 1rem auto 3rem;
     opacity: 0.9;
-    align-item: center;
-    
-}
+    }
 
 .team-redirect-container {
     max-width: 600px;
@@ -1462,17 +1459,28 @@ footer {
         padding: 4rem 1rem;
     }
 
+    #team-redirect h2 {
+        font-size: 1.8rem;
+        margin: 0 auto 1rem;
+        width: 100%;
+        left: 0;
+        transform: none;
+    }
+
     #team-redirect .subtitle {
         font-size: 1.2rem;
-        margin-top: -1.5rem;
+        margin: 0.5rem auto 2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .team-redirect-container {
+        padding: 0 1rem;
     }
 
     .team-redirect-container p {
         font-size: 1.1rem;
-    }
-
-    .team-redirect-btn {
-        padding: 0.8rem 2rem;
-        font-size: 1rem;
+        text-align: center;
+        width: 100%;
     }
 }
