@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             name: 'Dhruv shukla',
             role: 'Research Head',
             department: 'Research',
-            image: 'assets/Dhruvsh.jpg',
+            image: 'assets/dhruvsh.jpg',
             linkedin: 'https://www.linkedin.com/in/dhruv-shukla-152382290/',
         },
         {
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
             name: 'Ansab Siddiqui',
             role: 'Event Head',
             department: 'Event',
-            image: 'assets/ansab.JPG',
+            image: 'assets/ansab.jpg',
             linkedin: 'https://www.linkedin.com/in/simran-jaiswal-466100280/',
         },
         {
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
             name: 'Ishu Anand',
             role: 'Social Media Head',
             department: 'Social Media',
-            image: 'assets/ishu.jpg',
+            image: 'assets/ishu.JPG',
             linkedin: 'https://www.linkedin.com/in/simran-jaiswal-466100280/',
         },
         {
