@@ -1412,7 +1412,7 @@ footer {
 #team-redirect .subtitle {
     color: var(--secondary-color);
     font-size: 1.5rem;
-    margin: 1rem auto 3rem;
+    margin: 2rem auto 4rem;
     opacity: 0.9;
     }
 
@@ -1469,7 +1469,7 @@ footer {
 
     #team-redirect .subtitle {
         font-size: 1.2rem;
-        margin: 0.5rem auto 2rem;
+        margin: 1.5rem auto 4rem;
         width: 100%;
         text-align: center;
     }
