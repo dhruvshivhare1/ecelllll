@@ -80,9 +80,9 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'World Entrepreneurship Day',
             intro: 'Organized an impactful event featuring esteemed entrepreneurs Jitender Girdhar, Vaneeta Aggarwal, and Shubham Maheshwari, celebrating entrepreneurial achievements and sharing valuable insights.',
             description: 'Organized an impactful event featuring esteemed entrepreneurs Jitender Girdhar, Vaneeta Aggarwal, and Shubham Maheshwari, celebrating entrepreneurial achievements and sharing valuable insights.',
-            image: './ecelllll/assets/events/world.jpg',
+            image: '/ecelllll/assets/events/world.jpg',
             gallery: [
-                 './ecelllll/assets/events/world.jpg',
+                 '/ecelllll/assets/events/world.jpg',
             ]
         }
     ];
