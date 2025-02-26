@@ -1390,3 +1390,78 @@ footer {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 }
+/* Team Redirect Section */
+#team-redirect {
+    text-align: center;
+    padding: 6rem 2rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 20px;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+#team-redirect .subtitle {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    margin-top: -2rem;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+}
+
+.team-redirect-container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    opacity: 0;
+    animation: fadeInCard 0.8s ease forwards;
+}
+
+.team-redirect-container p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.team-redirect-btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--text-color);
+    background: var(--gradient-primary);
+    border-radius: 50px;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+}
+
+.team-redirect-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(197, 52, 219, 0.3);
+}
+
+@media (max-width: 768px) {
+    #team-redirect {
+        padding: 4rem 1rem;
+    }
+
+    #team-redirect .subtitle {
+        font-size: 1.2rem;
+        margin-top: -1.5rem;
+    }
+
+    .team-redirect-container p {
+        font-size: 1.1rem;
+    }
+
+    .team-redirect-btn {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+}
