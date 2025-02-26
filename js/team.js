@@ -57,27 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
             linkedin: 'https://www.linkedin.com/in/ayush-gupta-6a278525a/',
         },
         {
-            name: 'Manogya Pandey',
-            role: 'PR Head',
-            department: 'PR',
-            image: 'assets/manogya.jpg',
-            linkedin: 'https://www.linkedin.com/in/simran-jaiswal-466100280/',
-        },
-        {
-            name: 'Sakshi Kumari',
-            role: 'Research Head',
-            department: 'Research',
-            image: 'assets/sakshi.jpg',
-            linkedin: 'https://www.linkedin.com/in/simran-jaiswal-466100280/',
-        },
-        {
-            name: 'Adarsh Raj',
-            role: 'Social Media Head',
-            department: 'Social Media',
-            image: 'assets/adarsh.jpg',
-            linkedin: 'https://www.linkedin.com/in/simran-jaiswal-466100280/',
-        },
-        {
             name: 'Ishu Anand',
             role: 'Social Media Head',
             department: 'Social Media',
