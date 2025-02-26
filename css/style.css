@@ -1401,13 +1401,22 @@ footer {
     align-item: center;
 }
 
+#team-redirect h2 {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    left: 0;
+    transform: none;
+    margin-bottom: 1rem;
+}
+
 #team-redirect .subtitle {
     color: var(--secondary-color);
     font-size: 1.5rem;
-    margin-top: -2rem;
-    margin-bottom: 3rem;
+    margin: 1rem auto 3rem;
     opacity: 0.9;
     align-item: center;
+    
 }
 
 .team-redirect-container {
