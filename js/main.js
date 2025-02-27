@@ -345,7 +345,31 @@ document.addEventListener('DOMContentLoaded', () => {
             designation: 'Founder & CEO, Virtualinfocam',
             image: 'assets/speaker4.png'
 
-        }
+        },
+         {
+            name: 'Mr. Rahul Lakhmani',
+            designation: 'Founder & CEO, Skiify',
+            image: 'assets/images.jpg'
+
+        },
+         {
+            name: 'Mr. Saurabh Bajaj',
+            designation: 'EVP Prepaid Marketing @ vodafone Idea',
+            image: 'assets/speakers.jpg'
+
+        },
+         {
+            name: 'Mr. Dilkush Kumar',
+            designation: 'Founder & CEO, Rodbez',
+            image: 'assets/1.jpg'
+
+        },
+         {
+            name: 'Mr. Sagar Mahat',
+            designation: 'Founder - IndusTreeBiz',
+            image: 'assets/images.jpg'
+
+        },
     ];
 
     guestSpeakers.forEach(speaker => {
