@@ -1606,3 +1606,213 @@ footer {
 .podcasts-slider {
     scroll-behavior: smooth;
 }
+/* Competition Registration Section */
+.competition-promo {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 4rem 2rem;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.section #competition-register h2,
+.competition-promo h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: slideInDown 0.8s ease;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    transform: none;
+    position: relative;
+    display: block;
+}
+
+.promo-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.competition-promo h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: slideInDown 0.8s ease;
+}
+
+.competition-promo h3 {
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+    animation: slideInUp 0.8s ease 0.2s backwards;
+}
+
+.competition-promo p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 3rem;
+    animation: fadeIn 0.8s ease 0.4s backwards;
+}
+
+.competition-highlights {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.highlight-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    animation: bounceIn 0.8s ease backwards;
+}
+
+.highlight-item:nth-child(1) { animation-delay: 0.6s; }
+.highlight-item:nth-child(2) { animation-delay: 0.8s; }
+.highlight-item:nth-child(3) { animation-delay: 1s; }
+
+.highlight-item i {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    transition: transform 0.3s ease;
+}
+
+.highlight-item:hover i {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.highlight-item span {
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.register-now-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    background: var(--gradient-primary);
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.register-now-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(197, 52, 219, 0.3);
+}
+
+.register-now-btn i {
+    transition: transform 0.3s ease;
+}
+
+.register-now-btn:hover i {
+    transform: translateX(5px);
+}
+
+/* Floating Shapes Animation */
+.floating-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.shape {
+    position: absolute;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    opacity: 0.1;
+}
+
+.shape-1 {
+    width: 150px;
+    height: 150px;
+    top: -75px;
+    left: 10%;
+    animation: float 8s ease-in-out infinite;
+}
+
+.shape-2 {
+    width: 100px;
+    height: 100px;
+    bottom: -50px;
+    right: 15%;
+    animation: float 6s ease-in-out infinite reverse;
+}
+
+.shape-3 {
+    width: 75px;
+    height: 75px;
+    top: 50%;
+    right: 5%;
+    animation: float 7s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(-20px, -20px); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes bounceIn {
+    0% { opacity: 0; transform: scale(0.3); }
+    50% { transform: scale(1.1); }
+    70% { transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* Responsive Design for Competition Promo */
+@media (max-width: 768px) {
+    .competition-promo {
+        padding: 3rem 1rem;
+    }
+
+    .competition-promo h2 {
+        font-size: 2rem;
+    }
+
+    .competition-promo h3 {
+        font-size: 1.4rem;
+    }
+
+    .competition-highlights {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .highlight-item {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .register-now-btn {
+        padding: 0.8rem 2rem;
+        font-size: 1.1rem;
+    }
+}
