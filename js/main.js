@@ -386,7 +386,45 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+    initPodcastsSection();
 });
+
+function initPodcastsSection() {
+    const podcastsSlider = document.querySelector('.podcasts-slider');
+    const scrollLeftBtn = document.querySelector('.scroll-left');
+    const scrollRightBtn = document.querySelector('.scroll-right');
+    const scrollAmount = 300; // Amount to scroll each time
+
+    // Add scroll button functionality
+    scrollLeftBtn.addEventListener('click', () => {
+        podcastsSlider.scrollBy({
+            left: -scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+
+    scrollRightBtn.addEventListener('click', () => {
+        podcastsSlider.scrollBy({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+
+    // Show/hide scroll buttons based on scroll position
+    podcastsSlider.addEventListener('scroll', () => {
+        const isAtStart = podcastsSlider.scrollLeft === 0;
+        const isAtEnd = podcastsSlider.scrollLeft + podcastsSlider.clientWidth >= podcastsSlider.scrollWidth;
+
+        scrollLeftBtn.style.opacity = isAtStart ? '0.3' : '0.7';
+        scrollRightBtn.style.opacity = isAtEnd ? '0.3' : '0.7';
+    });
+
+    // Rest of your existing podcast initialization code...
+    const podcasts = [/* ...existing podcast array... */];
+    
+    // Your existing podcast card creation code...
+}
+
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
