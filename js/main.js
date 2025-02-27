@@ -367,7 +367,7 @@ document.addEventListener('DOMContentLoaded', () => {
          {
             name: 'Mr. Sagar Mahat',
             designation: 'Founder - IndusTreeBiz',
-            image: 'assets/images.jpg'
+            image: 'assets/aspea.jpg'
 
         },
     ];
