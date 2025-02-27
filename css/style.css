@@ -1193,11 +1193,12 @@ footer {
     }
 }
 
+
 /* Guest Speakers Section */
 .guest-speakers-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
     padding: 1rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -1205,54 +1206,74 @@ footer {
 }
 
 .guest-speaker-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
-    padding: 2rem 1rem;
+    padding: 2rem 1rem; /* Increased padding for vertical size */
     text-align: center;
     transition: var(--transition);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     opacity: 0;
     animation: fadeInCard 0.8s ease forwards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-
-/* Add animation delays for guest speakers */
-.guest-speaker-card:nth-child(1) { animation-delay: 0.1s; }
-.guest-speaker-card:nth-child(2) { animation-delay: 0.2s; }
-.guest-speaker-card:nth-child(3) { animation-delay: 0.3s; }
-.guest-speaker-card:nth-child(4) { animation-delay: 0.4s; }
-.guest-speaker-card:nth-child(5) { animation-delay: 0.5s; }
-.guest-speaker-card:nth-child(6) { animation-delay: 0.6s; }
-.guest-speaker-card:nth-child(7) { animation-delay: 0.7s; }
-.guest-speaker-card:nth-child(8) { animation-delay: 0.8s; }
 
 .guest-speaker-card:hover {
     transform: translateY(-10px);
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .guest-speaker-card img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
-    border: 3px solid rgba(255, 255, 255, 0.2);
+    border: 3px solid rgba(255, 255, 255, 0.3);
     padding: 5px;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .guest-speaker-card h3 {
-    color: var(--text-color);
-    font-size: 1.2rem;
+    color: white;
+    font-size: 0.8rem; /* Decreased font size */
     margin-bottom: 0.5rem;
 }
 
 .guest-speaker-card p {
-    color: #c534db;
-    font-size: 0.9rem;
+    color: white;
+    font-size: 0.6rem; /* Decreased font size */
     font-style: italic;
 }
+
+/* Responsive design for guest speaker cards */
+@media (max-width: 768px) {
+    .guest-speakers-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .guest-speaker-card {
+        padding: 1.5rem; /* Increased padding for vertical size */
+    }
+
+    .guest-speaker-card img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .guest-speaker-card h3 {
+        font-size: 0.7rem; /* Decreased font size */
+    }
+
+    .guest-speaker-card p {
+        font-size: 0.5rem; /* Decreased font size */
+    }
+}
+
 
 /* Animations */
 @keyframes fadeInUp {
