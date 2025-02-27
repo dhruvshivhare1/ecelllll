@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Crisis to Creation | E-Cell</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="bg-canvas"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
+    </nav>
+
+    <!-- Registration Form Section -->
+    <section class="register-section">
+        <div class="register-container">
+            <div class="form-header">
+                <h1>Crisis to Creation</h1>
+                <h2>The Business Innovation Challenge</h2>
+                
+                <div class="competition-info">
+                    <div class="info-banner">
+                        <p class="organizer">Organized by E-Cell, Sri Aurobindo College, Delhi University</p>
+                    </div>
+
+                    <div class="competition-description">
+                        <p>A prestigious competition designed to evaluate participants' business acumen, strategic thinking, and crisis management skills.</p>
+                    </div>
+
+                    <div class="rounds-grid">
+                        <div class="round-card">
+                            <div class="round-number">01</div>
+                            <h3>Online Quiz</h3>
+                            <p>Test your business knowledge and analytical skills</p>
+                        </div>
+                        <div class="round-card">
+                            <div class="round-number">02</div>
+                            <h3>Press Conference Challenge</h3>
+                            <p>Corporate vs. Media simulation</p>
+                        </div>
+                        <div class="round-card">
+                            <div class="round-number">03</div>
+                            <h3>Simulated Market War</h3>
+                            <p>Navigate real-world business scenarios</p>
+                        </div>
+                    </div>
+
+                    <div class="important-note">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Only the top 10 performers from the online quiz will progress to the subsequent rounds.</p>
+                    </div>
+                </div>
+            </div>
+
+            <form id="registrationForm" class="register-form">
+                <div class="form-group">
+                    <h3>Team Information</h3>
+                    <div class="input-group">
+                        <input type="text" id="teamName" required>
+                        <label for="teamName">Team Name</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <h3>Team Leader Details</h3>
+                    <div class="input-group">
+                        <input type="text" id="leaderName" required>
+                        <label for="leaderName">Full Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="leaderEmail" required>
+                        <label for="leaderEmail">Email Address</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" id="leaderPhone" pattern="[0-9]{10}" required>
+                        <label for="leaderPhone">Phone Number</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="leaderCollege" required>
+                        <label for="leaderCollege">College Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="leaderCourse" required>
+                        <label for="leaderCourse">Course</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <h3>Team Members (Optional)</h3>
+                    <div class="team-members" id="teamMembers">
+                        <div class="member-inputs">
+                            <div class="input-group">
+                                <input type="text" id="member1Name">
+                                <label for="member1Name">Member 1 Name</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" id="member1Email">
+                                <label for="member1Email">Member 1 Email</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" id="addMember" class="add-member-btn">
+                        <i class="fas fa-plus"></i> Add Team Member
+                    </button>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">I agree to the terms and conditions</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Register Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <i class="fas fa-check-circle success-icon"></i>
+            <h2>Registration Successful!</h2>
+            <p>Thank you for registering for Crisis to Creation. We will contact you shortly with further details.</p>
+            <button class="modal-btn" onclick="window.location.href='index.html'">Back to Home</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>
