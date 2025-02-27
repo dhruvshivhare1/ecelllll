@@ -87,17 +87,26 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     ];
 
-    events.forEach(event => {
+   events.forEach(event => {
         const card = document.createElement('div');
         card.className = 'event-card';
         card.innerHTML = `
             <img src="${event.image}" alt="${event.title}">
             <h3>${event.title}</h3>
             <p>${event.intro}</p>
+            <button class="view-more-btn">View More</button>
         `;
-        card.addEventListener('click', () => showModal(event));
+        
+        // Add click event for the entire card
+        const viewMoreBtn = card.querySelector('.view-more-btn');
+        viewMoreBtn.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent card click event
+            showModal(event);
+        });
+        
         eventsContainer.appendChild(card);
     });
+
 
     // Add this new code for event cards animation
     const eventCards = document.querySelectorAll('.event-card');
