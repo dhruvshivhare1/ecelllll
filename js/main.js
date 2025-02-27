@@ -246,39 +246,49 @@ document.addEventListener('DOMContentLoaded', () => {
 
     counters.forEach(counter => counterObserver.observe(counter));
 
-    // Modal functionality
+     // Modal functionality
     const modal = document.getElementById('modal');
-    const closeModal = document.querySelector('.close-modal');
     const modalContent = document.getElementById('modal-content');
 
     function showModal(content) {
         modalContent.innerHTML = `
+            <span class="close-modal">&times;</span>
             <h2>${content.title}</h2>
-            ${content.youtubeId ? `
-                <iframe width="100%" height="400" 
-                    src="https://www.youtube.com/embed/${content.youtubeId}" 
-                    frameborder="0" allowfullscreen>
-                </iframe>
-            ` : ''}
-            <p class="modal-description">${content.description}</p>
-            ${content.gallery ? `
-                <div class="gallery">
-                    ${content.gallery.map(image => `<img src="${image}" alt="${content.title}">`).join('')}
-                </div>
-            ` : ''}
+            <div class="modal-content-inner">
+                ${content.youtubeId ? `
+                    <iframe width="100%" height="400" 
+                        src="https://www.youtube.com/embed/${content.youtubeId}" 
+                        frameborder="0" allowfullscreen>
+                    </iframe>
+                ` : ''}
+                <p class="modal-description">${content.description}</p>
+                ${content.gallery ? `
+                    <div class="gallery">
+                        ${content.gallery.map(image => `
+                            <img src="${image}" alt="${content.title}" loading="lazy">
+                        `).join('')}
+                    </div>
+                ` : ''}
+            </div>
         `;
         modal.style.display = 'block';
+        
+        // Add event listener to the newly created close button
+        const closeModalBtn = modalContent.querySelector('.close-modal');
+        if (closeModalBtn) {
+            closeModalBtn.addEventListener('click', () => {
+                modal.style.display = 'none';
+            });
+        }
     }
 
-    closeModal.addEventListener('click', () => {
-        modal.style.display = 'none';
-    });
-
+    // Close modal when clicking outside
     window.addEventListener('click', (e) => {
         if (e.target === modal) {
             modal.style.display = 'none';
         }
     });
+           
 
     // Guest speakers section
     const guestSpeakersContainer = document.querySelector('.guest-speakers-container');
