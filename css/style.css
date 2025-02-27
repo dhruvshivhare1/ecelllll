@@ -162,6 +162,11 @@ body {
     box-shadow: var(--box-shadow);
 }
 
+.cta1-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(197, 52, 219, 0.3);
+}
+
 .cta-button {
     display: inline-block;
     padding: 1rem 2.5rem;
